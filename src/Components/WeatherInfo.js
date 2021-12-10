@@ -25,7 +25,8 @@ export const WeatherInfo = () => {
             return <Error error={error} />
         }
     }
-    useEffect((dispatch, history, status) => {
+
+ useEffect((status) => {  
         if (status !== 'rejected') {
             dispatch(fetchWeatherData(citySelect))
         }
