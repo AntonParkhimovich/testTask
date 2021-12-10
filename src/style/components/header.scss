@@ -1,0 +1,19 @@
+.header{
+    width: 100vw;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-link{
+        text-decoration: none;
+        color: white;
+    }
+    &-link:hover{
+        color: #6c8650;
+    }
+    
+}
+.active{
+  text-decoration: underline;
+  color: #6c8650;
+}

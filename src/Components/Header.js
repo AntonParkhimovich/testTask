@@ -1,11 +1,13 @@
-import {
-    Link
-  } from "react-router-dom";
-export const Header =()=>{
-    return(
+import { NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
+
+
+export const Header = () => {
+    let { cityPath } = useParams();
+    return (
         <header className={'header'}>
-            <Link className={'header-link'} to={`/${city}`}>Главная страница</Link>
-            <Link className={'header-link'} to={`/${city}/detail`}>Побочная страница</Link>
+            <NavLink className={'header-link'} activeClassName={'active'} exact to={`/${cityPath}`}>HOME</NavLink>
+            <NavLink className={'header-link'} activeClassName={'active'}  to={`/${cityPath}/detail`}>DETAIL</NavLink>
         </header>
     )
 }

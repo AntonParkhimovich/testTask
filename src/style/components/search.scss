@@ -1,0 +1,13 @@
+.search{
+    width: 51vw;
+    max-width: 360px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    &-input{
+        flex-grow: 0.5;
+    }
+    &-button{
+        width: 100px;
+    }
+}

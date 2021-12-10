@@ -1,14 +1,13 @@
 import { WeatherInfo } from "./WeatherInfo"
+import { ButtonChangeCity } from "./ButtonChangeCity"
+import { selectNextCity, selectPreviusCity } from "../store/weatherSlice"
+export const Main = () => {
 
-export const Main =()=>{
-    return(
+    return (
         <main className={'main'}>
-            <div className={'main-header'}>
-                <h2 className={'main-header__title'}>{cityName}</h2>
-            </div>
-            <div className={'main-main'}>
-                <WeatherInfo/>
-            </div>
+                <ButtonChangeCity className={'button button-previus'} onClickFunc={selectPreviusCity} />
+                <WeatherInfo />
+                <ButtonChangeCity className={'button button-next'} onClickFunc={selectNextCity} />
         </main>
     )
 }
