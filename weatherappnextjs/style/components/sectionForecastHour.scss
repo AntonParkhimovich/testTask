@@ -1,0 +1,53 @@
+.forecast-hour{
+    height: 500px;
+    overflow: scroll;
+}
+.forecast-hour__main{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 5px 4px; 
+    grid-template-areas: 
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."; 
+
+}
+.forecast-hour__item-list{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 5px 4px; 
+    list-style-type: none;
+}
+.forecast-hour__header{
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 4px; 
+  color: #6c8650;
+}
+.header-item{
+    list-style-type: none;
+}

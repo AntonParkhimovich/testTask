@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+}
+ .button-next, .button-previus{
+    width: 30px;
+    height: 100px;
+    border-radius:none;
+}

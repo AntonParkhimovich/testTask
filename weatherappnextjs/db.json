@@ -1,0 +1,28 @@
+{
+  "cityData": [
+    {
+      "id": 0,
+      "city": "minsk"
+    },
+    {
+      "id": 1,
+      "city": "gomel"
+    },
+    {
+      "id": 2,
+      "city": "brest"
+    },
+    {
+      "city": "grodno",
+      "id": 3
+    },
+    {
+      "city": "nigeria",
+      "id": 4
+    },
+    {
+      "city": "hurgada",
+      "id": 5
+    }
+  ]
+}
